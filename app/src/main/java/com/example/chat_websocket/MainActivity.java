@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     private  void websocket(){
 
         OkHttpClient client = new OkHttpClient();
-        Request request = new Request.Builder().url("").build();
+        Request request = new Request.Builder().url("ws://10.10.10.159:8080").build();
         SocketListener socketListener = new SocketListener(this);
         webSocket = client.newWebSocket(request,socketListener);
     }
