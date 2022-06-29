@@ -16,18 +16,19 @@
         android:textColor="@color/black"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"/>
+
     <EditText
+        android:id="@+id/messageBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/messageBox"
         android:layout_alignParentBottom="true"
         android:layout_toLeftOf="@+id/send"
-        android:hint="Enter a massege"/>
-
+        android:hint="Enter a massege" />
     <ListView
         android:id="@+id/messageList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:dividerHeight="0dp"
+        android:divider="@null"
         android:layout_above="@id/messageBox" />
-
 </RelativeLayout>
